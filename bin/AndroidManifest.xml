@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.demo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.demo.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.demo.popupwindow.PopUpWindowActivity"
+            android:label="popupwindow测试" >
+            <intent-filter>
+                <action android:name="com.example.demo.POPUP_WINDOW" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.demo.jsjava.JsJavaActivity"
+            android:label="JS_Java相互调用测试" >
+            <intent-filter>
+                <action android:name="com.example.demo.JS_JAVA" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.demo.sonfatherthread.SonFatherThreadCommuicateActivity"
+            android:label="子线程更新UI测试" >
+        </activity>
+        <activity
+            android:name="com.example.demo.alarmmanager.AlarmManagerActivity"
+            android:label="定时器测试" >
+        </activity>
+        <activity
+            android:name="com.example.demo.runningtask.TabHostListActivity"
+            android:label="查询进程、启动的应用、服务" >
+        </activity>
+        <activity
+            android:name="com.example.demo.runningtask.ProcMgrActivity"
+            android:label="查询进程" >
+        </activity>
+        <activity
+            android:name="com.example.demo.runningtask.ServiceMgrActivity"
+            android:label="查询服务" >
+        </activity>
+        <activity
+            android:name="com.example.demo.runningtask.TaskMgrActivity"
+            android:label="查询启动的应用" >
+        </activity>
+
+        <!-- 使用自定义的样式 -->
+        <activity
+            android:name="com.example.demo.notification.CustomFallActivity"
+            android:theme="@style/Theme.FloatActivity" >
+        </activity>
+        <activity
+            android:name="com.example.demo.notification.CustomUpDownActivity"
+            android:theme="@style/Theme.FloatActivity" >
+        </activity>
+
+        <receiver android:name="com.example.demo.alarmmanager.AlarmBroadCastReceiver" >
+            <intent-filter>
+                <action android:name="single" />
+                <action android:name="repeating" />
+                <action android:name="repeating2" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

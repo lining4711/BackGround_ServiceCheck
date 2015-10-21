@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="popupwindow测试" />
+
+    <Button
+        android:id="@+id/js_java"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="JS_Java相互调用" />
+    
+     <Button
+        android:id="@+id/son_ui_thread"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="son_ui_thread相互调用" />
+     
+     <Button
+        android:id="@+id/alarm_manager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="AlarmManager测试" />
+     
+     <Button
+        android:id="@+id/prc_service_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="查询进程、启动的应用、服务" />
+     
+      <Button
+        android:id="@+id/send_ad_notify"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="发送广告_通知" />
+      <Button
+        android:id="@+id/send_ad_fall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="发送广告_下拉" />
+      
+      <Button
+        android:id="@+id/send_ad_up_down"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="发送广告_上下" />
+      
+
+</LinearLayout>

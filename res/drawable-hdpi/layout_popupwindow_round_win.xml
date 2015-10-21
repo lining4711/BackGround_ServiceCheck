@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 对于上面，这条 shape 的定义，分别为渐变，在gradient 中startColor属性为开始的颜色，endColor 为渐变结束的颜色，下面的 angle 是角度。接下来是 stroke可以理解为边缘，dashWidth 表示宽度，dashGap 表示断续；corners 为拐角这里radius 属性为半径，最后是相对位置属性 padding。 -->
+<!-- android:color 是一个16 进制颜色。这个颜色由RGB 值指定，可带Alpha 。必须以“# ”开头，后面跟随Alpha-Red-Green-Blue。Alpha表示的是透明度，0为全透明，ff为全不透明。 -->
+<!--        以上完成了弹出窗口的边框，渐变色，透明，圆角等操作。 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <gradient
+        android:angle="90"
+        android:endColor="#e000ff00"
+        android:startColor="#e0000fff" />
+ <!-- 背景颜色渐变 -->
+
+    <stroke
+        android:dashGap="2dp"
+        android:dashWidth="2dp"
+        android:width="2dp"
+        android:color="#ff0000" >
+    </stroke>
+
+    <!-- 描边 -->
+
+    <corners
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp"
+        android:topLeftRadius="5dp"
+        android:topRightRadius="5dp" />
+ <!-- 设置圆角 -->
+
+</shape>

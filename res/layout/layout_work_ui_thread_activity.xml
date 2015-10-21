@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff00ff"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/myButton1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="测试子线程更新UI" />
+
+    <Button
+        android:id="@+id/myButton2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="测试AsynTask" />
+
+    <TextView
+        android:id="@+id/textshow"
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:gravity="center"
+        android:text="测试区域" />
+
+</LinearLayout>

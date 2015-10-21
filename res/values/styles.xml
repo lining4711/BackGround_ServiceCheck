@@ -1,0 +1,39 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    
+    <style name="mytheme" parent="@android:style/Theme.Light">  
+       <item name="android:windowNoTitle"> true </item>  
+    </style>  
+  
+<!--     定义一组动画，启动android:windowEnterAnimation， -->
+<!--     android:windowExitAnimation都是系统调用的，系统调用动画的时候自动调用设置的动画 -->
+<!-- value目录下面的style文件，最终内容会被映射到R文件。具体的动画的动作文件是定义在anim目录。此处仅仅定义一个变量 -->
+    <style name="PopupAnimation" parent="android:Animation">  
+       <item name="android:windowEnterAnimation">@anim/ani_in</item>  
+       <item name="android:windowExitAnimation">@anim/ani_out</item>  
+    </style>  
+
+    <!-- 定义一个样式，继承android系统的对话框样式 android:style/Theme.Dialog-->  
+    <style name="Theme.FloatActivity" parent="android:style/Theme.Dialog">  
+        <!-- float_box为我们定义的窗口背景-->  
+        <item name="android:windowBackground">@drawable/float_box</item>  
+    </style>  
+    
+</resources>

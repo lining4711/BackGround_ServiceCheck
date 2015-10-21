@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2010 IdeasAndroid -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/ad1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:background="#70000000" >
+
+        <Button
+            android:id="@+id/close1"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ad_close" >
+        </Button>
+
+        <LinearLayout
+            android:id="@+id/touch_area1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ideasandroidlogo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:src="@drawable/jingdong_logo" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ideasandroidlogo"
+                android:text="京东，专业的综合网上购物商城，销售超数万品牌、4020万种商品，囊括家电、手机、电脑、母婴、个护、服装、图书、食品、旅游等13大品类。秉承客户为先的理念，京东所售商品100％正品行货、全国联保、机打发票"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ad_blank"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/ad1"
+        android:layout_height="150dip" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ad2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#70000000" >
+
+        <Button
+            android:id="@+id/close2"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ad_close" >
+        </Button>
+
+        <LinearLayout
+            android:id="@+id/touch_area2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ideasandroidlogo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:src="@drawable/suning_logo" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ideasandroidlogo"
+                android:text="苏宁旗下综合网上购物商城，100%正品行货，全网更低价格，门店体验便捷下单！囊括红孩子母婴；家用电器；手机；电脑；图书；更有苏宁免费手机贴膜1对1贴心服务。"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15dip" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
